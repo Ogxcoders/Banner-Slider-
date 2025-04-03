@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+  
+  
+ 
+ 
+ 
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      padding: 0;
+      background: none;
+      border-radius: 7px;
+    }
+
+    .splide__slide img {
+      width: 100%;
+      object-fit: fill;
+      
+    
+    height: 100%;
+      border-radius: 7px;
+    }
+
+    /* Adjust heights for desktop and Android devices */
+    .splide__slide img {
+      height: 250px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .splide__slide img {
+        height: 100px;
+      }
+    }
+
+    /* Dot navigation styling */
+    .splide__pagination {
+      position: relative;
+      bottom: -20px; /* Position below the slider */
+      display: flex;
+      justify-content: center;
+      gap: 6px; /* Smaller spacing between dots */
+    }
+
+    .splide__pagination__page {
+      width: 8px; /* Smaller dot size */
+      height: 8px;
+      border-radius: 50%;
+      background-color: #e6b1c1; /* Secondary lighter color */
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .splide__pagination__page.is-active {
+      background-color: #e61355; /* Primary color for active dot */
+      transform: scale(1.2); /* Slightly enlarges the active dot */
+    }
+
+    /* Arrow button styling */
+    .splide__arrow {
+      background-color: #ffffff; /* Default black background */
+      color: #ffffff; /* White arrow content */
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px; 
+      /* Arrow font size */
+      line-height: ; 
+      /* Align arrow content properly */
+      width: ; 
+      /* Fixed width and height for arrows */
+      height: ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .splide__arrow:hover {
+      background-color: white; /* Primary color on hover */
+      color: blue; /* White arrow */
+    }
+
+    /* Custom arrow positions */
+    .splide__arrow--prev {
+      left: 15px;
+    }
+
+    .splide__arrow--next {
+      right: 15px;
+    }
+  </style>
+
+
+
+
+  <div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+         <a href="https://ogtemplate.com/capcut-download?target=external"> <img src="https://ogtemplate.com/wp-content/uploads/2025/01/20241013_125830.webp" alt="Slide 1"></a>
+        </li>
+        <li class="splide__slide">
+          <a href="https://ogtemplate.com/free-best-vpn-download/?target=external"><img src="https://ogtemplate.com/wp-content/uploads/2025/01/20241013_125541.webp" alt="Slide 2"></a>
+        </li>
+        <li class="splide__slide">
+         <a href="https://whatsapp.com/channel/0029VaB9bmD3mFY71Iv6ls2P?target=external"><img src="https://ogtemplate.com/wp-content/uploads/2025/01/IMG_20241030_233153.webp" alt="Slide 3"></a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#splide', {
+        type       : 'loop',
+        perPage    : 1,
+        autoplay   : true,
+        interval   : 3000,
+        pauseOnHover: true,
+        lazyLoad   : 'nearby',
+        pagination : true,
+        arrows     : true,
+        classes    : {
+          arrows: 'splide__arrows custom-arrows',
+          pagination: 'splide__pagination custom-pagination',
+        },
+      }).mount();
+    });
+  </script>
+  
+  
+  
+  
+  
+  
+  
